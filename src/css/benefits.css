@@ -45,3 +45,20 @@
     letter-spacing: 0.5px;
     word-wrap: break-word;
 }
+
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(188, 223, 209, 1);
+}
+
+.icon-benefits {
+    border: 2px #00D068;
+    fill: #00D068;
+    
+}
