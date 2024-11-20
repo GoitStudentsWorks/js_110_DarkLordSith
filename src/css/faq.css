@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path-to-montserrat-regular.woff2') format('woff2'),
+        url('path-to-montserrat-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path-to-montserrat-bold.woff2') format('woff2'),
+        url('path-to-montserrat-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.faq-section {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #292929;
+}
+
+.title-main {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.title-sub {
+    font-size: 24px;
+    color: #00c853;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ac {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ac-header {
+    margin: 0;
+}
+
+.ac-trigger {
+    padding: 20px !important;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ac-trigger:focus {
+    outline: none;
+}
+
+.ac-panel {
+    padding: 20px !important;
+    font-family: inherit;
+}
+
+.ac.is-active .ac-trigger,
+.ac.is-active .ac-panel {
+    background-color: #BCDFD1 !important;
+}
+
+.ac-trigger::after {
+    content: '' !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg) !important;
+    right: 20px !important;
+}
+
+.ac.is-active .ac-trigger::after {
+    transform: rotate(-135deg) !important;
+}
+
+.faq-list .ac {
+    margin: 0;
+    /* Відміняє відступи між елементами списку */
+    padding: 0;
+    /* Відміняє внутрішні відступи, якщо вони були */
+}
+
+@media (min-width: 768px) {
+    .faq-section {
+        max-width: 720px;
+    }
+
+    .title-main {
+        font-size: 36px;
+    }
+
+    .title-sub {
+        font-size: 28px;
+    }
+
+    .ac-trigger {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .faq-section {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        background-color: #f5f5f5;
+    }
+
+    .faq-container {
+        padding: 0px 32px;
+        min-width: 1280px;
+        height: 1020px;
+
+        display: flex;
+        /* Встановлює розташування секцій в ряд або колонку */
+        flex-wrap: wrap;
+        /* Дозволяє елементам переноситися на новий ряд */
+        gap: 104px;
+        /* Відстань між секціями */
+        padding: 20px;
+    }
+
+    .faq-left-corner {
+        flex: 0 0 auto;
+        /* Фіксована ширина */
+        width: 526px;
+        height: 408px;
+        position: relative;
+    }
+
+    .custom-container {
+
+        background-color: #f5f5f5;
+        /* Опціонально */
+        border: 2px solid #ddd;
+
+    }
+
+    .faq-list-section {
+        flex: 1 1 calc(100% - 546px);
+        /* Решта простору після врахування лівого контейнера */
+        padding: 10px;
+    }
+
+    .section-title {
+        max-width: 520px;
+        max-height: 372px;
+        text-align: left;
+    }
+
+    .title-main {
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #292929;
+    }
+
+    .title-sub {
+        font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #00c853;
+
+    }
+
+    .faq-list {
+        margin-top: 272px;
+        width: 592px;
+        height: 744px;
+        gap: 104px;
+
+        list-style: none;
+        padding: 0;
+
+
+    }
+
+    .ac {
+        margin: 0px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .faq-section {
+        max-width: none;
+        width: 100%;
+    }
+}
