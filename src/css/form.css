@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.work-together {
+    padding: 40px 0;
+}
+
+.container {
+    /* width: 100%; */
+}
+
+.contacts {}
+
+.work-together_title {
+    font-family: Impact;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 40px;
+}
+
+.work-together_title span {
+    color: #00B068;
+}
+
+.contacts_desc {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.contacts_address {}
+
+.contacts_list {}
+
+.contacts_item {}
+
+.contacts_link {}
+
+.contacts_icon {
+    fill: none;
+    stroke: #292929;
+}
+
+.contacts_text {}
+
+.work-together_form {}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label {}
+
+.form_input {}
+
+.form_message {}
+
+.form-btn {}
