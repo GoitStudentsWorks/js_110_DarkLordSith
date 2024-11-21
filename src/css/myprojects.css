@@ -1,0 +1,51 @@
+/* .load-more {
+    width: 154px;
+    height: 52px;
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #292929;
+} */
+/* .project-title {
+    font-family: "Impact", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 123%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #292929;;
+        width: 291px;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 0;
+}
+.project-title span {
+    color: #00b068;
+}
+
+.my-prog-list {
+    width: 320px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .project-title {
+            font-weight: 400;
+            font-size: 88px;
+            line-height: 115%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #292929;
+            width: 584px;
+            
+    }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    
+} */
