@@ -1,5 +1,6 @@
 // FAQ.JS
-import { initializeAccordion } from './js/faq';
+import { initFaq } from './js/faq';
 
-// Викликаємо функцію для ініціалізації Accordion
-initializeAccordion();
+document.addEventListener('DOMContentLoaded', () => {
+  initFaq();
+});
