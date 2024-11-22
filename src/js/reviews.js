@@ -11,6 +11,8 @@ let visibleCount = getVisibleCount();
 const reviewsContainer = document.querySelector('.reviews-list');
 const prevButton = document.querySelector('.slider-button-prev');
 const nextButton = document.querySelector('.slider-button-next');
+const prevIcon = prevButton.querySelector('.icon-button-swipe');
+const nextIcon = nextButton.querySelector('.icon-button-swipe');
 
 async function fetchReviews() {
   try {
@@ -59,12 +61,22 @@ function renderPlaceholder() {
 }
 
 function updateSliderState() {
-  prevButton.disabled = currentIndex === 0;
-  nextButton.disabled = currentIndex + visibleCount >= reviewsData.length;
+  const isPrevDisabled = currentIndex === 0;
+  const isNextDisabled = currentIndex + visibleCount >= reviewsData.length;
 
-  prevButton.classList.toggle('disabled', prevButton.disabled);
-  nextButton.classList.toggle('disabled', nextButton.disabled);
+  prevButton.disabled = isPrevDisabled;
+  nextButton.disabled = isNextDisabled;
+
+  prevButton.classList.toggle('disabled', isPrevDisabled);
+  nextButton.classList.toggle('disabled', isNextDisabled);
+
+  prevIcon.classList.toggle('icon-disabled', isPrevDisabled);
+  nextIcon.classList.toggle('icon-disabled', isNextDisabled);
 }
+
+
+
+// ------------------------------------------------
 
 prevButton.addEventListener('click', () => {
   if (currentIndex > 0) {

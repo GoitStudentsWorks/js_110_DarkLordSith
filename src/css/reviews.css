@@ -14,41 +14,17 @@ font-weight: 400;
     color: #292929;
 }
 
-.containers-butonns{
-    display: flex;
-    gap: 14px;
-}
-
-.slider-button{
-    background: transparent;
-        border: 1px solid #292929;
-        cursor: pointer;
-        border-radius: 8px;
-        width: 40px;
-        height: 40px;
-}
-
-.left-arrow{
-    transform: rotate(-180deg)
-}
-
-.icon-button-swipe{
-    fill: none;
-    stroke: #292929;
-}
-
-/* --0------------------------------------------ */
 .reviews-slider {
-        display: flex;
-        gap: 24px 16px;
-            width: 90%;
-            max-width: 800px;
-            overflow: hidden;
-            position: relative;
-            margin: 0 auto;
-            flex-direction: row;
-            justify-content: flex-end;
-            flex-wrap: wrap;
+    display: flex;
+    gap: 24px 16px;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .reviews-list {
@@ -60,6 +36,35 @@ font-weight: 400;
     width: 100%;
 }
 
+.slider-button{
+    background: transparent;
+        border: 1px solid #292929;
+        cursor: pointer;
+        border-radius: 8px;
+        width: 40px;
+        height: 40px;
+}
+
+.slider-button.disabled {
+    border: 1px solid #e4e5e6;
+    cursor: not-allowed;
+}
+
+.icon-button-swipe {
+    fill: none;
+    stroke: #292929;
+}
+
+.icon-disabled {
+    stroke: #e4e5e6;
+}
+
+.left-arrow{
+    transform: rotate(-180deg)
+}
+
+/* - - items - - */
+
 .review-item {
     flex: 1 1 calc(100% - 20px);
     display: flex;
@@ -67,14 +72,23 @@ font-weight: 400;
     gap: 24px;
     align-items: flex-start;
     background-color: #e4e5e6;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
     padding: 34px;
     transition: all 0.3s ease;
 }
 
+.author-feedback {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+
 .review-avatar {
-    border-radius: 50%;
+    border-radius: 24px;
     width: 40px;
     height: 40px;
 }
@@ -94,36 +108,20 @@ font-weight: 400;
         color: #292929;
 }
 
-.author-feedback {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    margin: 0;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
-        color: #292929;
-}
-
-.slider-button.disabled {
-    border: 1px solid #e4e5e6;
-    cursor: not-allowed;
-}
-
+/* - - mediaCalls - - */
 
 @media (min-width: 768px) {
     .review-item {
         flex: 1 1 calc(100% - 20px);
-        
+        padding: 32px;
     }
 }
 
 @media (min-width: 1280px) {
     .review-item {
         flex: 1 1 calc(50% - 20px);
-        
     }
 }
-/* ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
     .container {
@@ -131,11 +129,11 @@ font-weight: 400;
         padding: 0 32px;
     }
 
-        .article-reviews{
-            font-weight: 400;
-                font-size: 108px;
-                line-height: 1.14815;
-                letter-spacing: 0.02em;
+    .article-reviews{
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 1.14815;
+        letter-spacing: 0.02em;
         }
 
 }
@@ -145,9 +143,19 @@ font-weight: 400;
         max-width: 1280px;
     }
 
-        .slider-button{
-            width: 48px;
-                height: 48px;
-        }
+    .reviews-list {
+        gap: 34px;
+    }
+
+    .slider-button{
+        width: 48px;
+        height: 48px;
+    }
+
+    .reviews-slider {
+        max-width: none;
+        width: auto;
+
+    }
 }
 
