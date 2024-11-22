@@ -124,7 +124,6 @@
             .title-benefits {
                 margin: 0;
                 max-width: 682px;
-                /* position: relative; */
             }
         
             .items-benefits {
@@ -134,8 +133,8 @@
                 justify-content: space-between;
                 gap: 20px;
                 width: 100%;
-                position: absolute;
-                top: 276px;
+                position: relative;
+                top: -98px;
             }
         
             .list-benefits {
@@ -166,6 +165,6 @@
                 background-size: cover;
                 position: absolute;
                 right: 0;
-                top: -30%;
+                top: -15%;
             }
     }
