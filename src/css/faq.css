@@ -1,8 +1,12 @@
 .faq-section {
+    padding-top: 174px;
+    padding-bottom: 154px;
     max-width: 1280px;
     max-height: 1030px;
     margin: 0 auto;
 }
+
+
 
 .faq-heading {
     margin-top: 8px;
