@@ -74,11 +74,16 @@
     width: 100%;
 }
 
+.faq-accordion-trigger[aria-expanded="true"] .faq-accordion-icon {
+    transform: rotate(180deg);
+}
+
 .faq-accordion-icon {
-    width: 12px;
-    height: 6px;
-    margin: 13px 10px;
-    fill: #292929;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px;
     flex-shrink: 0;
     transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
