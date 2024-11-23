@@ -11,25 +11,15 @@
      scroll-behavior: smooth;
  }
 
- @font-face {
-     font-family: 'Impact';
-     src: url('../fonts/impact.ttf') format('truetype');
-     font-style: normal;
- }
-
  ul {
      list-style-type: none;
  }
 
+.section-hero {
+    margin-bottom: 80px;
+}
 
-
- section {
-     padding-left: 20px;
-     padding-right: 20px;
-     margin-bottom: 80px;
- }
-
- .section-hero {
+ .hero-wrapper {
      display: flex;
      flex-wrap: wrap;
      max-width: 320px;
@@ -44,6 +34,7 @@
      margin-right: auto;
      margin-top: 16px;
      position: relative;
+     
  }
 
  .hero-background-image {
@@ -212,14 +203,11 @@
 
  @media screen and (min-width: 768px) {
 
-     section {
-         width: 768px;
-         padding-left: 32px;
-         padding-right: 32px;
+     .section-hero {
          margin-bottom: 124px;
      }
 
-     .section-hero {
+     .hero-wrapper {
          max-width: 768px;
          display: flex;
          justify-content: center;
@@ -295,13 +283,12 @@
 
  @media screen and (min-width: 1280px) {
 
-     section {
-         width: 1280px;
+    .section-hero {
+        margin-bottom: 164px;
      }
 
-     .section-hero {
+     .hero-wrapper {
          max-width: 1280px;
-         margin-bottom: 164px;
      }
 
      .section-hero-title {
