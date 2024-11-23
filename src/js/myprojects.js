@@ -62,7 +62,8 @@ const projects = [
                 link: "#"  
     }
             
-        ];
+];
+        
 
         let firstIndex = 0;
         const projectsPerPage = 3;
