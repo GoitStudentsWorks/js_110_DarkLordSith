@@ -16,10 +16,7 @@
  }
 
 .section-hero {
-    margin-bottom: 80px;
-}
-
- .hero-wrapper {
+     margin-bottom: 80px;
      display: flex;
      flex-wrap: wrap;
      max-width: 320px;
@@ -205,9 +202,6 @@
 
      .section-hero {
          margin-bottom: 124px;
-     }
-
-     .hero-wrapper {
          max-width: 768px;
          display: flex;
          justify-content: center;
@@ -285,9 +279,6 @@
 
     .section-hero {
         margin-bottom: 164px;
-     }
-
-     .hero-wrapper {
          max-width: 1280px;
      }
 
