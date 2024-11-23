@@ -133,9 +133,6 @@
         
             .items-benefits {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: auto;
-                justify-content: space-between;
                 gap: 20px;
                 width: 100%;
                 position: relative;
