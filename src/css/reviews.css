@@ -1,3 +1,7 @@
+.reviews{
+    margin-bottom: 80px;
+}
+
 .reviews-container{
     display: flex;
         align-items: center;
@@ -12,6 +16,7 @@ font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
+    margin-bottom: 40px;
 }
 
 /* -- slider --*/
@@ -117,12 +122,20 @@ font-weight: 400;
         flex: 1 1 calc(100% - 20px);
         padding: 32px;
     }
+
+        .reviews {
+            margin-bottom: 124px;
+        }
 }
 
 @media (min-width: 1280px) {
     .review-item {
         flex: 1 1 calc(50% - 20px);
     }
+
+         .reviews {
+             margin-bottom: 164px;
+         }
 }
 
 @media screen and (min-width: 768px) {
@@ -136,6 +149,7 @@ font-weight: 400;
         font-size: 108px;
         line-height: 1.14815;
         letter-spacing: 0.02em;
+        margin-bottom: 60px;
         }
 
 }
@@ -157,7 +171,10 @@ font-weight: 400;
     .reviews-slider {
         max-width: none;
         width: auto;
-
     }
+
+        .article-reviews {
+            margin-bottom: 80px;
+        }
 }
 
