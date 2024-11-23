@@ -165,7 +165,6 @@
 
  .hero-img {
      display: none;
-     justify-content: center;
  }
 
  .description-container {
@@ -253,11 +252,6 @@
          margin-bottom: 0;
      }
 
-     .hero-img img {
-         width: 336px;
-         height: 508px;
-     }
-
      .description-container {
          flex-direction: row;
          padding: 64px 32px;
@@ -285,11 +279,6 @@
      .section-hero-title {
          font-size: 136px;
          margin-bottom: 50px;
-     }
-
-     .hero-img img {
-         width: 488px;
-         height: 788px;
      }
 
      .description-container {
