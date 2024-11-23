@@ -1,27 +1,4 @@
-.tech-skills-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
 
-/* .tech-container {
-    min-width: 320px;
-    max-width: 360px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  } */
 
 body {
   margin: 0;
@@ -74,7 +51,7 @@ body {
   flex-shrink: 0;
   margin: 0;
   padding: 32px 15px 32px 0px;
-  min-width: 70%;
+  min-width: 50%;
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -94,32 +71,12 @@ body {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-  .container {
-      max-width: 768px;
-      padding: 0 32px;
-    }
-
-    .tech-skills-section {
-      padding-top: 62px;
-      padding-bottom: 62px;
-    }
   
-
   }
 
 
   @media screen and (min-width: 1280px) {
-    .container {
-      max-width: 1280px;
-      
-    }
-
-    .tech-skills-section {
-      padding-top: 82px;
-      padding-bottom: 82px;
-    }
+   
   }
  
