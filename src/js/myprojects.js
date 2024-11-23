@@ -4,7 +4,7 @@ const projects = [
         images: {
             "360": { "1x": "./img/myproject/Financ-mob.1x.jpg", "2x": "./img/myproject/Financ-mob.2x.jpg" },
             "767": { "1x": "./img/myproject/Financ-tab.1x.jpg", "2x": "./img/myproject/Financ-tab.2x.jpg" },
-            "1280": { "1x": "./img/myproject/Financ-desc.1x.jpg", "2x": "./img/myproject/Financ-desc.2x.jpg" }
+            "1280": { "1x": "./img/myproject/Wallet-desc.1x.jpg", "2x": "./img/myproject/Wallet-desc.2x.jpg" }
         },
         stack: "React, JavaScript, Node JS, Git",
         title: "WALLET WEBSERVICE",
@@ -116,7 +116,7 @@ function loadProjects() {
         const { images, stack, title, link } = project;
 
         const pictureElement = `
-            <picture>
+            <picture class="picture">
                 <source srcset="${images[1280]["1x"]} 1x, ${images[1280]["2x"]} 2x" media="(min-width: 1280px)">
                 <source srcset="${images[767]["1x"]} 1x, ${images[767]["2x"]} 2x" media="(min-width: 768px)">
                 <img src="${images[360]["1x"]}" srcset="${images[360]["2x"]} 2x" alt="${title}">

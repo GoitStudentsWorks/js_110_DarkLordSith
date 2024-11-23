@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'Impact';
   src: url('/src/fonts/impact.ttf');
@@ -5,21 +11,42 @@
   font-style: normal;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background-color: #f0f0f0;
+}
+
+h1,
+h2 {
+  font-family: 'Impact', sans-serif;
+}
+
+body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
+p,
+ul[class],
+ol[class],
+li {
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -31,6 +58,7 @@ a {
 }
 
 button {
+  border: none;
   cursor: pointer;
 }
 
@@ -38,17 +66,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1,
-h2 {
-  font-family: 'Impact', sans-serif;
 }
 
 .visually-hidden {
@@ -75,6 +92,21 @@ h2 {
   width: 52px;
 }
 
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* section {
+  padding: 40px 0;
+} */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -85,6 +117,7 @@ h2 {
     width: 74px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
