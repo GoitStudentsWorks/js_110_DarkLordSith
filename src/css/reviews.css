@@ -1,3 +1,7 @@
+.reviews{
+    margin-bottom: 80px;
+}
+
 .reviews-container{
     display: flex;
         align-items: center;
@@ -118,12 +122,20 @@ font-weight: 400;
         flex: 1 1 calc(100% - 20px);
         padding: 32px;
     }
+
+        .reviews {
+            margin-bottom: 124px;
+        }
 }
 
 @media (min-width: 1280px) {
     .review-item {
         flex: 1 1 calc(50% - 20px);
     }
+
+         .reviews {
+             margin-bottom: 164px;
+         }
 }
 
 @media screen and (min-width: 768px) {
