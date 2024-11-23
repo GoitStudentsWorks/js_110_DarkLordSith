@@ -1,8 +1,4 @@
-.about-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
-}
+
 
 .section-title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -93,12 +89,6 @@
 
   @media screen and (min-width: 768px) {
 
-
-.about-section {
-    padding-top: 62px;
-    padding-bottom: 62px;
-    
-    }
 
    .about-container {
     background-image: url(../img/about-me/group-67-tab-2x.png);
@@ -194,13 +184,6 @@
 
   @media screen and (min-width: 1280px) {
   
-
-      .about-section {
-        padding-top: 82px;
-        padding-bottom: 82px;
-        
-        }
-
         .about-container {
            
             background-image: url(/img/about-me/group-67-desktop-2x.png);
