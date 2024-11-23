@@ -123,11 +123,6 @@
 /* - - mediaCalls - - */
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .article-reviews {
     font-weight: 400;
     font-size: 108px;
@@ -140,14 +135,9 @@
     flex: 1 1 calc(100% - 20px);
     padding: 32px;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .review-item {
     flex: 1 1 calc(50% - 20px);
   }

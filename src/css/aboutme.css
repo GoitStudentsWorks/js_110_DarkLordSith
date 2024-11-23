@@ -1,237 +1,206 @@
-
-
 .section-title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: left;
-    color: #292929;
-    margin-bottom: 40px;
-    
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #292929;
+  margin-bottom: 40px;
 }
 
 .title-accent {
-    color: #00b068;
+  color: #00b068;
 }
 
 .about-me-img {
-   
-    border-radius: 16px;
-    width: 320px;
-    height: 374px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    margin-bottom: 40px;
+  border-radius: 16px;
+  width: 320px;
+  height: 374px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
 }
 
 .about-title {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 32px;
 }
 
 .about-me-text {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    
-    &:not(:last-child) {
-        margin-bottom: 24px;
-    }
-    
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 .bio {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .description-list {
-    list-style-type: disc;
-    
+  list-style-type: disc;
 }
 
 .description-list-item::marker {
-    color: #00b068;
+  color: #00b068;
+}
+
+.description-list-item {
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  padding-right: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
   }
+}
 
-  .description-list-item {
-    font-family: "Poppins", sans-serif;
-
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    padding-right: 10px;
-
-    &:not(:last-child) {
-        margin-bottom: 12px;
-    }
-  }
-
-  .education{
+.education {
   margin-bottom: 40px;
-  
-  }
+}
 
-
-  @media screen and (min-width: 768px) {
-
-
-   .about-container {
+@media screen and (min-width: 768px) {
+  .about-container {
     background-image: url(../img/about-me/group-67-tab-2x.png);
     background-repeat: no-repeat;
     background-position: left 400px top 844px;
     background-size: 336px 264px;
-   } 
+  }
 
   .section-title {
-    
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     margin-bottom: 40px;
   }
 
-.about-wrapper {
+  .about-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 32px;   
-   
-}
+    gap: 32px;
+  }
 
-.img-wrapper {
-    
+  .img-wrapper {
     display: flex;
     align-items: end;
-     
-}
+  }
 
-.about-me-img {
+  .about-me-img {
     margin-top: 368px;
     width: 336px;
     height: 392px;
     margin-bottom: 0;
-}
+  }
 
-.bio {
+  .bio {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 0;
     width: 336px;
     height: 680px;
-      
-}
+  }
 
-.about-title {
+  .about-title {
     margin-bottom: 32px;
     font-size: 36px;
-    line-height:1.33;
+    line-height: 1.33;
     letter-spacing: 0.01em;
+  }
 
-}
-
-.description {
+  .description {
     display: flex;
     flex-direction: row;
     gap: 32px;
     margin-top: 60px;
-    
-   
-}
+  }
 
-.education {
+  .education {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.role {
+  .role {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.description-list-item {
-   
+  .description-list-item {
     &:not(:last-child) {
-        margin-bottom: 16px;
+      margin-bottom: 16px;
     }
   }
 
   .education {
     width: 336px;
-    
+
     margin-bottom: 0;
-      }
-
-      .role {
-        width: 336px;
-        
-    }
   }
 
-  @media screen and (min-width: 1280px) {
-  
-        .about-container {
-           
-            background-image: url(/img/about-me/group-67-desktop-2x.png);
-            background-repeat: no-repeat;
-            background-position: right 32px top 692px;
-            background-size: 364px 288px;
-           } 
-
-      .about-wrapper {
-        gap: 136px;  
-        justify-content: flex-end; 
-
-      
-       }
-
-      .about-me-img {
-        margin-top: 272px;
-        width: 384px;
-        height: 448px;
-        
-       }
-
-       .bio {
-        width: 488px;
-        height: 488px;
-       
-    }
-
-    .description {
-        
-         gap: 136px;
-         margin-top: 80px;
-         justify-content: flex-end;
-       
-     }
- 
-     .description-list-item {
-         padding-right: 15px;
-     }
- 
-     .education {
-        
-         width: 384px;
-         }
- 
-     .role {
-         
-         width: 488px;
-     }
-
+  .role {
+    width: 336px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-container {
+    background-image: url(/img/about-me/group-67-desktop-2x.png);
+    background-repeat: no-repeat;
+    background-position: right 32px top 692px;
+    background-size: 364px 288px;
+  }
+
+  .about-wrapper {
+    gap: 136px;
+    justify-content: flex-end;
+  }
+
+  .about-me-img {
+    margin-top: 272px;
+    width: 384px;
+    height: 448px;
+  }
+
+  .bio {
+    width: 488px;
+    height: 488px;
+  }
+
+  .description {
+    gap: 136px;
+    margin-top: 80px;
+    justify-content: flex-end;
+  }
+
+  .description-list-item {
+    padding-right: 15px;
+  }
+
+  .education {
+    width: 384px;
+  }
+
+  .role {
+    width: 488px;
+  }
+}
