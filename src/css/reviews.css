@@ -12,6 +12,7 @@ font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #292929;
+    margin-bottom: 40px;
 }
 
 /* -- slider --*/
@@ -136,6 +137,7 @@ font-weight: 400;
         font-size: 108px;
         line-height: 1.14815;
         letter-spacing: 0.02em;
+        margin-bottom: 60px;
         }
 
 }
@@ -157,7 +159,10 @@ font-weight: 400;
     .reviews-slider {
         max-width: none;
         width: auto;
-
     }
+
+        .article-reviews {
+            margin-bottom: 80px;
+        }
 }
 
