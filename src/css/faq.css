@@ -154,6 +154,7 @@ body {
     }
 
     .faq-accordion-box {
+        /* margin-top: 282px; */
         padding: 0;
         max-width: 592px;
         margin-bottom: 4px;
