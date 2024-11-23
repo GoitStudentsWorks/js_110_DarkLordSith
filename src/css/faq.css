@@ -2,9 +2,7 @@ body {
     margin: 0;
 }
 
-<<<<<<< HEAD=======>>>>>>>origin/main .faq-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.faq-section {
     max-width: 1280px;
     min-width: 360px;
     margin: 0 auto;
@@ -104,10 +102,6 @@ body {
         line-height: 160%;
     }
 
-    .faq-section {
-        padding-top: 62px;
-        padding-bottom: 62px;
-    }
 
     .faq-accordion-box {
         padding-left: 0;
@@ -128,9 +122,13 @@ body {
 }
 
 @media screen and (min-width: 1268px) {
-    .faq-section {
-        padding-top: 82px;
-        padding-bottom: 82px;
+
+
+    .faq-section .faq-accordion-box {
+        margin-top: 282px;
+        padding: 0;
+        max-width: 592px;
+        margin-bottom: 4px;
     }
 
     .faq-main {
@@ -152,7 +150,7 @@ body {
         padding: 0;
         max-width: 592px;
         margin-bottom: 4px;
-        margin-top: 276px;
+
     }
 
 
