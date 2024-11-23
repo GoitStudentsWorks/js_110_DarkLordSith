@@ -53,7 +53,7 @@ ol {
 }
 
 a {
-  color: currentColor;
+  color: inherit;
   text-decoration: none;
 }
 
