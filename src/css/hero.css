@@ -30,17 +30,19 @@
  }
 
  .section-hero {
+     display: flex;
+     flex-wrap: wrap;
      max-width: 320px;
      padding-top: 72px;
      padding-bottom: 72px;
-     background-image: url(./images/herodots@1x.png);
+     background-image: url(../img/hero/herodots@1x.png);
      background-color: #1e2023;
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      margin-left: auto;
      margin-right: auto;
-
+     margin-top: 16px;
      position: relative;
  }
 
@@ -59,7 +61,7 @@
  (min-resolution: 192dpi),
  (min-resolution: 2dppx) {
      .section-main {
-         background-image: url(./images/herodots@2x.png);
+         background-image: url(../img/hero/herodots@2x.png);
      }
  }
 
@@ -123,9 +125,8 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: #f0f0f0;
-     margin-top: 96px;
-     margin-bottom: 0;
      text-align: center;
+     padding-top: 72px;
  }
 
  .highlight {
@@ -176,6 +177,7 @@
 
  .hero-img {
      display: none;
+     justify-content: center;
  }
 
  .description-container {
@@ -200,7 +202,7 @@
      text-transform: uppercase;
      text-align: center;
      color: #f0f0f0;
-     width: 320px;
+     padding-top: 20px 32px;
  }
 
 
@@ -249,7 +251,7 @@
      }
 
      .section-hero-title {
-         font-size: 136px;
+         font-size: 124px;
          line-height: 1.15;
          letter-spacing: 0.01em;
          margin-top: 50px;
@@ -295,11 +297,11 @@
 
      section {
          width: 1280px;
-         margin-bottom: 164px;
      }
 
      .section-hero {
          max-width: 1280px;
+         margin-bottom: 164px;
      }
 
      .section-hero-title {
@@ -317,7 +319,4 @@
          height: 384px;
      }
 
-     .hero-description {
-         width: 1008px;
-     }
  }
