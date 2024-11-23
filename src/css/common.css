@@ -11,41 +11,6 @@
   font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -60,6 +25,47 @@ body {
 h1,
 h2 {
   font-family: 'Impact', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -86,40 +92,8 @@ h2 {
   width: 52px;
 }
 
-
-ul[class],
-ol[class] {
-  padding: 0;
-  list-style: none;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
 }
 
 input,
@@ -129,14 +103,9 @@ select {
   font: inherit;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-}
-
-section {
+/* section {
   padding: 40px 0;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .container {
