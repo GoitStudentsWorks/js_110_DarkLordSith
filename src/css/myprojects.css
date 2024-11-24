@@ -99,7 +99,7 @@
   color: #000;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-visit :hover {
+.link-visit:hover {
   background: #bbb;
 }
 .text-visit {
@@ -142,7 +142,7 @@
   stroke-width: 2px;
 }
 .picture img {
-    border-radius: 24px;
+  border-radius: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -206,8 +206,8 @@
     max-width: 100%;
   }
   .picture img {
-      display: block;
-      width: 100%;
-      height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
