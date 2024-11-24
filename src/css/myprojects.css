@@ -141,6 +141,9 @@
   stroke: #00a550;
   stroke-width: 2px;
 }
+.picture img {
+    border-radius: 24px;
+}
 
 @media screen and (min-width: 768px) {
   .project-title {
@@ -201,5 +204,10 @@
     display: block;
     width: 100%;
     max-width: 100%;
+  }
+  .picture img {
+      display: block;
+      width: 100%;
+      height: auto;
   }
 }
