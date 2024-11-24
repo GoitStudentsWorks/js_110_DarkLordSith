@@ -114,3 +114,7 @@ function initSlider() {
 }
 
 export { initSlider };
+
+document.addEventListener('DOMContentLoaded', () => {
+  initSlider();
+});
