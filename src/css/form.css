@@ -2,9 +2,16 @@
     width: 100%;
 }
 
+.work-together {
+    padding-top: 200px;
+}
+
+.work-together_wrapper {
+    position: relative;
+}
+
 .work-together_title {
     font-size: 52px;
-    font-weight: 400;
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -12,8 +19,27 @@
     margin-bottom: 40px;
 }
 
+/* .work-together_title {
+    background-image: url(../img/form/dots-1x-desc.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: url(../img/form/dots-2x-desc.webp);
+    }
+} */
+
 .work-together_title span {
     color: #00B068;
+}
+
+.work-together_bg-img {
+    position: absolute;
+    top: -116px;
+    right: 0;
 }
 
 .contacts {
@@ -29,10 +55,6 @@
     text-transform: uppercase;
     color: #292929;
 }
-
-.contacts_address {}
-
-.contacts_list {}
 
 .contacts_item {
     display: inline-block;
@@ -63,16 +85,6 @@
     fill: none;
     stroke: #00B068;
 }
-
-.contacts_text {}
-
-.work-together_form {}
-
-/* .form {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-} */
 
 .form_field {
     margin-bottom: 32px;
@@ -117,8 +129,6 @@
 }
 
 .form-btn {
-    /* min-width: 169px; */
-    /* margin: 0 auto; */
     width: 100%;
     padding: 12px 24px;
     border-radius: 8px;
@@ -264,6 +274,19 @@
         max-width: 514px;
         margin-bottom: 80px;
     }
+
+    /* .work-together_background-img {
+        position: absolute;
+        width: 0;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    } */
 
     .work-together_info {
         display: flex;

@@ -1,61 +1,86 @@
 <section class="work-together" id="work-together">
   <div class="container">
-    <h2 class="work-together_title">let’s <span>work together</span></h2>
-    <div class="work-together_info">
-      <div class="work-together-contacts contacts">
-        <p class="contacts_desc">
-          Contact me to transform your ideas into exceptional solutions.
-        </p>
-        <address class="contacts_address">
-          <ul class="contacts_list">
-            <li class="contacts_item">
-              <a class="contacts_link" href="tel:+380904567890">
-                <svg width="24" height="24" class="contacts_icon">
-                  <use xlink:href="../img/icons.svg#icon-mail"></use>
-                </svg>
-                <span class="contacts_text">+38 090 456 78 90</span>
-              </a>
-            </li>
-            <li class="contacts_item">
-              <a class="contacts_link" href="mailto:lloydjefferson@gmail.com">
-                <svg width="24" height="24" class="contacts_icon">
-                  <use xlink:href="../img/icons.svg#icon-phone"></use>
-                </svg>
-                <span class="contacts_text">lloydjefferson@gmail.com</span>
-              </a>
-            </li>
-            <li class="contacts_item">
-              <a class="contacts_link" href="">
-                <svg width="24" height="24" class="contacts_icon">
-                  <use xlink:href="../img/icons.svg#icon-location"></use>
-                </svg>
-                <span class="contacts_text">USA, New York</span>
-              </a>
-            </li>
-          </ul>
-        </address>
+    <div class="work-together_wrapper">
+      <h2 class="work-together_title">let’s <span>work together</span></h2>
+      <div class="work-together_bg-img">
+        <picture>
+          <source
+            srcset="
+              ../img/form/dots-1x-desc.webp 1x,
+              ../img/form/dots-2x-desc.webp 2x
+            "
+            media="(min-width:1158px)"
+          />
+          <source
+            srcset="
+              ../img/form/dots-1x-tab.webp 1x,
+              ../img/form/dots-2x-tab.webp 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            src="../img/form/dots-1x-desc.webp"
+            alt="work-together_background-img"
+            width="521"
+          />
+        </picture>
       </div>
-      <div class="work-together_form">
-        <form class="form">
-          <div class="form_field input_field">
-            <input
-              type="email"
-              name="email"
-              class="form_input"
-              placeholder="Your email*"
-              required
-            />
-          </div>
-          <div class="form_field message_field">
-            <textarea
-              name="usermessage"
-              id="user-message"
-              class="form_message"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit" class="form-btn">SEND MESSAGE</button>
-        </form>
+      <div class="work-together_info">
+        <div class="work-together-contacts contacts">
+          <p class="contacts_desc">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+          <address class="contacts_address">
+            <ul class="contacts_list">
+              <li class="contacts_item">
+                <a class="contacts_link" href="tel:+380904567890">
+                  <svg width="24" height="24" class="contacts_icon">
+                    <use xlink:href="../img/icons.svg#icon-mail"></use>
+                  </svg>
+                  <span class="contacts_text">+38 090 456 78 90</span>
+                </a>
+              </li>
+              <li class="contacts_item">
+                <a class="contacts_link" href="mailto:lloydjefferson@gmail.com">
+                  <svg width="24" height="24" class="contacts_icon">
+                    <use xlink:href="../img/icons.svg#icon-phone"></use>
+                  </svg>
+                  <span class="contacts_text">lloydjefferson@gmail.com</span>
+                </a>
+              </li>
+              <li class="contacts_item">
+                <a class="contacts_link" href="">
+                  <svg width="24" height="24" class="contacts_icon">
+                    <use xlink:href="../img/icons.svg#icon-location"></use>
+                  </svg>
+                  <span class="contacts_text">USA, New York</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="work-together_form">
+          <form class="form">
+            <div class="form_field input_field">
+              <input
+                type="email"
+                name="email"
+                class="form_input"
+                placeholder="Your email*"
+                required
+              />
+            </div>
+            <div class="form_field message_field">
+              <textarea
+                name="usermessage"
+                id="user-message"
+                class="form_message"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="form-btn">SEND MESSAGE</button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- <form class="modal_form">
