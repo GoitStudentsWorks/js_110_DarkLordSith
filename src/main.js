@@ -1,8 +1,4 @@
-import { initSlider } from './js/reviews';
-
-document.addEventListener('DOMContentLoaded', () => {
-  initSlider();
-});
-
+import './js/faq';
+import './js/reviews';
 import './js/myprojects';
 import './js/mobile-menu';
