@@ -6,4 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider();
 });
 
+import './js/reviews';
+
 import './js/myprojects';
