@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Impact';
-  src: url('/src/fonts/impact.ttf');
+  src: url('/fonts/impact.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  background: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 h1,
@@ -37,7 +37,6 @@ ul[class],
 ol[class],
 li {
   margin: 0;
-  padding: 0;
   border: 0;
 }
 
@@ -84,8 +83,9 @@ img {
 .container {
   min-width: 320px;
   max-width: 360px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .favicon {
@@ -103,14 +103,19 @@ select {
   font: inherit;
 }
 
-/* section {
+section {
   padding: 40px 0;
-} */
+}
 
 @media screen and (min-width: 768px) {
+  section {
+    padding: 62px 0;
+  }
+
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .favicon {
@@ -119,6 +124,10 @@ select {
 }
 
 @media screen and (min-width: 1280px) {
+  section {
+    padding: 82px 0;
+  }
+
   .container {
     max-width: 1280px;
   }
