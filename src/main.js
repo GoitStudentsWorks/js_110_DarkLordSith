@@ -5,3 +5,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 import './js/myprojects';
+import './js/mobile-menu';
