@@ -157,7 +157,13 @@ ul {
 
 .hero-img {
   display: block;
-  width: 276px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-img img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -224,6 +230,10 @@ ul {
     display: flex;
     justify-content: flex-start;
     text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
   }
 
   .section-hero-title {
@@ -238,8 +248,8 @@ ul {
   .hero-button-link {
     align-items: left;
     position: absolute;
-    left: 200px;
-    top: 75%;
+    left: 450px;
+    top: 72%;
     transform: translateY(-50%);
     padding: 35px 24px;
     width: 240px;
@@ -306,15 +316,18 @@ ul {
   }
 
   .hero-button-link {
-    left: 100px;
-    top: 65%;
+    left: 150px;
+    top: 61%;
   }
 
   .hero-img {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+  }
+
+  .hero-img img {
     width: 488px;
-    height: 788px;
+    height: auto;
   }
 
   .description-container {
