@@ -97,10 +97,10 @@
   background-color: #e4e5e6;
   font-weight: bold;
   color: #000;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-visit:hover {
-  background: #bbb;
+  background-color: #bbb;
 }
 .text-visit {
   font-weight: 500;
