@@ -7,7 +7,7 @@
 /* Common styles */
 @import url('./common.css');
 /* Sections style */
-/* @import url('./header.css'); */
+@import url('./header.css');
 @import url('./back-link.css');
 @import url('./mob-menu.css');
 @import url('./hero.css');

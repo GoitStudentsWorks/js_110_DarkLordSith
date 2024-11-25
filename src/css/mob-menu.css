@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #fbfbfb;
+  background: #fbfbfb url('../img/bg_mobile_menu.png') no-repeat center 75%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -29,26 +29,20 @@
 .mobile-menu-container {
   position: relative;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* .logo-container {
+.logo-container {
   display: flex;
   justify-content: start;
   align-items: center;
-  border: 1px solid #fbfbfb;
   border-radius: 8px;
   width: 100%;
   min-height: 42px;
-  background-color: #fbfbfb;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 201px;
-} */
+  margin-bottom: auto;
+}
 
 @media screen and (max-height: 587px) {
   .logo-container {
@@ -79,13 +73,11 @@
   border: none;
   background: none;
   stroke: #292929;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-icon {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
 }
 
 .mobile-menu-nav {
@@ -97,49 +89,27 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  gap: 4px;
+  gap: 24px;
 }
 
 .mobile-menu-item {
-  border-radius: 8px;
-  width: 91px;
   height: 40px;
-  background-color: rgba(27, 65, 75, 0.5);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
   display: block;
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 1.3;
-  text-transform: uppercase;
   text-align: center;
-  color: #fbfbfb;
-  padding-left: 24px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-item:hover,
-.mobile-menu-item:focus {
-  background-color: #1b414b;
-  border-radius: 8px;
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: #00b068;
 }
-
-.contact-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.contacts-icon {
-  fill: #fbfbfb;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* .contacts-icon:hover,
-.contacts-icon:focus {
-  fill: rgba(251, 251, 251, 0.8); */
