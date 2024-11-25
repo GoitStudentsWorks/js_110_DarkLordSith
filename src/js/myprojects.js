@@ -1,3 +1,5 @@
+import icon1 from '../img/icons.svg'
+
 
 import FinancMob1x from '../img/myproject/Financ-mob.1x.jpg';
 import FinancMob2x from '../img/myproject/Financ-mob.2x.jpg';
@@ -22,56 +24,56 @@ import LearnTab2x from '../img/myproject/Learn-tab.2x.jpg';
 import LearnDesc1x from '../img/myproject/Learn-desc.1x.jpg';
 import LearnDesc2x from '../img/myproject/Learn-desc.2x.jpg';
 
-import ChegoMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import ChegoMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import ChegoTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import ChegoTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import ChegoDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import ChegoDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import ChegoMob1x from '../img/myproject/Chego-mob.1x.jpg';
+import ChegoMob2x from '../img/myproject/Chego-mob.2x.jpg';
+import ChegoTab1x from '../img/myproject/Chego-tab.1x.jpg';
+import ChegoTab2x from '../img/myproject/Chego-tab.2x.jpg';
+import ChegoDesc1x from '../img/myproject/Chego-desc.1x.jpg';
+import ChegoDesc2x from '../img/myproject/Chego-desc.2x.jpg';
 
 
-import MiminoMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import MiminoMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import MiminoTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import MiminoTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import MiminoDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import MiminoDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import MiminoMob1x from '../img/myproject/Mimino-mob.1x.jpg';
+import MiminoMob2x from '../img/myproject/Mimino-mob.2x.jpg';
+import MiminoTab1x from '../img/myproject/Mimino-tab.1x.jpg';
+import MiminoTab2x from '../img/myproject/Mimino-tab.2x.jpg';
+import MiminoDesc1x from '../img/myproject/Mimino-desc.1x.jpg';
+import MiminoDesc2x from '../img/myproject/Mimino-desc.2x.jpg';
 
-import vyshyvankaMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import vyshyvankaMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import vyshyvankaTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import vyshyvankaTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import vyshyvankaDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import vyshyvankaDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import vyshyvankaMob1x from '../img/myproject/vyshyvanka-mob.1x.jpg';
+import vyshyvankaMob2x from '../img/myproject/vyshyvanka-mob.2x.jpg';
+import vyshyvankaTab1x from '../img/myproject/vyshyvanka-tab.1x.jpg';
+import vyshyvankaTab2x from '../img/myproject/vyshyvanka-tab.2x.jpg';
+import vyshyvankaDesc1x from '../img/myproject/vyshyvanka-desc.1x.jpg';
+import vyshyvankaDesc2x from '../img/myproject/vyshyvanka-desc.2x.jpg';
 
-import EnergyMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import EnergyMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import EnergyTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import EnergyTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import EnergyDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import EnergyDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import EnergyMob1x from '../img/myproject/Energy-mob.1x.jpg';
+import EnergyMob2x from '../img/myproject/Energy-mob.2x.jpg';
+import EnergyTab1x from '../img/myproject/Energy-tab.1x.jpg';
+import EnergyTab2x from '../img/myproject/Energy-tab.2x.jpg';
+import EnergyDesc1x from '../img/myproject/Energy-desc.1x.jpg';
+import EnergyDesc2x from '../img/myproject/Energy-desc.2x.jpg';
 
-import PowerMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import PowerMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import PowerTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import PowerTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import PowerDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import PowerDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import PowerMob1x from '../img/myproject/Power-mob.1x.jpg';
+import PowerMob2x from '../img/myproject/Power-mob.2x.jpg';
+import PowerTab1x from '../img/myproject/Power-tab.1x.jpg';
+import PowerTab2x from '../img/myproject/Power-tab.2x.jpg';
+import PowerDesc1x from '../img/myproject/Power-desc.1x.jpg';
+import PowerDesc2x from '../img/myproject/Power-desc.2x.jpg';
 
 
-import FreshMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import FreshMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import FreshTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import FreshTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import FreshDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import FreshDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import FreshMob1x from '../img/myproject/Fresh-mob.1x.jpg';
+import FreshMob2x from '../img/myproject/Fresh-mob.2x.jpg';
+import FreshTab1x from '../img/myproject/Fresh-tab.1x.jpg';
+import FreshTab2x from '../img/myproject/Fresh-tab.2x.jpg';
+import FreshDesc1x from '../img/myproject/Fresh-desc.1x.jpg';
+import FreshDesc2x from '../img/myproject/Fresh-desc.2x.jpg';
 
-import firstscreenMob1x from '../img/myproject/Learn-mob.1x.jpg';
-import firstscreenMob2x from '../img/myproject/Learn-mob.2x.jpg';
-import firstscreenTab1x from '../img/myproject/Learn-tab.1x.jpg';
-import firstscreenTab2x from '../img/myproject/Learn-tab.2x.jpg';
-import firstscreenDesc1x from '../img/myproject/Learn-desc.1x.jpg';
-import firstscreenDesc2x from '../img/myproject/Learn-desc.2x.jpg';
+import firstscreenMob1x from '../img/myproject/first screen-mob.1x.jpg';
+import firstscreenMob2x from '../img/myproject/first screen-mob.2x.jpg';
+import firstscreenTab1x from '../img/myproject/first screen-tab.1x.jpg';
+import firstscreenTab2x from '../img/myproject/first screen-tab.2x.jpg';
+import firstscreenDesc1x from '../img/myproject/first screen-desc.1x.jpg';
+import firstscreenDesc2x from '../img/myproject/first screen-desc.2x.jpg';
 
 
 const projects = [
@@ -190,7 +192,7 @@ function createProjectItem(project) {
 
 
   const pictureElement = `
-    <picture class="project-image">
+    <picture class="picture">
       <source srcset="${images["1280"]["1x"]} 1x, ${images["1280"]["2x"]} 2x" media="(min-width: 1280px)">
       <source srcset="${images["768"]["1x"]} 1x, ${images["768"]["2x"]} 2x" media="(min-width: 768px)">
       <source srcset="${images["360"]["1x"]} 1x, ${images["360"]["2x"]} 2x" media="(max-width: 767px)">
@@ -200,17 +202,19 @@ function createProjectItem(project) {
 
 
   return `
-    <li class="project-item">
+    <li>
       ${pictureElement}
       <div class="info">
         <p class="stack">${stack}</p>
+        <div class="info-text">
         <h3 class="title">${title}</h3>
         <a href="${link}" class="link-visit" target="_blank">
           <span class="text-visit">VISIT</span>
               <svg class="icon-arrow" width="24" height="24">
-              <use href="/img/icons.svg#icon-diagonal-arrow-up"></use>
+              <use href="${icon1}#icon-diagonal-arrow-up"></use>
                       </svg>
         </a>
+      </div>
       </div>
     </li>
   `;
