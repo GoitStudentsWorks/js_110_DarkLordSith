@@ -52,7 +52,6 @@
 .menu-wrapper {
   display: flex;
 
-
   @media screen and (max-width: 768.98px) {
     justify-content: space-between;
 
@@ -89,7 +88,6 @@
 
 @media screen and (min-width: 768.98px) {
   .container .page-header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,10 +103,9 @@
   width: 48px;
   height: 24px;
   margin-right: 40px;
+}
 
-
-  @media screen and (max-width: 1279.98px) {
-
+@media screen and (max-width: 1279.98px) {
 }
 
 .switch__input {
@@ -142,11 +139,11 @@
   transition: 0.4s;
 }
 
-.switch__input:checked+.switch__slider {
+.switch__input:checked + .switch__slider {
   background-color: #292929;
 }
 
-.switch__input:checked+.switch__slider::before {
+.switch__input:checked + .switch__slider::before {
   top: 2px;
   left: 6px;
 
