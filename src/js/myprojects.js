@@ -1,3 +1,4 @@
+
 import icon1 from '../img/icons.svg'
 
 
@@ -184,7 +185,8 @@ const projectsPerPage = 3;
 const projectList = document.getElementById("projects-list");
 const loadMoreButton = document.getElementById("load-more");
 
-loadMoreButton.addEventListener("click", loadProjects);
+
+loadMoreButton.addEventListener('click', loadProjects);
 
 
 function createProjectItem(project) {
@@ -225,6 +227,7 @@ function loadProjects() {
   const nextProjects = projects.slice(firstIndex, firstIndex + projectsPerPage);
 
   nextProjects.forEach(project => {
+
     const projectHTML = createProjectItem(project);
     const projectElement = document.createElement("li");
     projectElement.innerHTML = projectHTML;
@@ -236,6 +239,7 @@ function loadProjects() {
 
   if (firstIndex >= projects.length) {
     loadMoreButton.style.display = "none";
+
   }
 }
 
