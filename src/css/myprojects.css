@@ -152,10 +152,6 @@
     line-height: 115%;
     letter-spacing: 0.02em;
   }
-  .my-projects {
-    padding-top: 184px;
-    padding-bottom: 137px;
-  }
   .load-more {
     font-weight: 400;
     font-size: 20px;
@@ -187,9 +183,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .my-projects {
-    padding-top: 191px;
-  }
 
   .my-project-list {
     padding-left: 104px;
