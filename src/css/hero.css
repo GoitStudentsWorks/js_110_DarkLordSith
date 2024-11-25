@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 320px;
-  background-image: url(./img/hero/herodotsmob@1x.png);
+  background-image: url(../img/hero/herodotsmob@1x.png);
   background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-position: right top;
@@ -32,7 +32,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .section-main {
-    background-image: url(./img/hero/herodotsmob@2x.png);
+    background-image: url(../img/hero/herodotsmob@2x.png);
   }
 }
 
@@ -177,7 +177,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/hero/herodotstabl@1x.png);
+    background-image: url(../img/hero/herodotstabl@1x.png);
     background-position: right bottom;
   }
 
@@ -186,7 +186,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-main {
-      background-image: url(./img/hero/herodotstabl@2x.png);
+      background-image: url(../img/hero/herodotstabl@2x.png);
     }
   }
 
@@ -263,7 +263,7 @@
   .section-hero {
     margin-bottom: 164px;
     max-width: 1280px;
-    background-image: url(./img/hero/herodots@1x.png);
+    background-image: url(../img/hero/herodots@1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -271,7 +271,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-main {
-      background-image: url(./img/hero/herodots@2x.png);
+      background-image: url(../img/hero/herodots@2x.png);
     }
   }
 
