@@ -1,7 +1,7 @@
 .header-link__logo {
-  font-family: Impact;
+  font-family: Impact, sans-serif;
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: 400;
   letter-spacing: 1.5px;
   color: #292929;
   text-decoration: none;
@@ -52,6 +52,7 @@
 .menu-wrapper {
   display: flex;
 
+
   @media screen and (max-width: 768.98px) {
     justify-content: space-between;
 
@@ -88,9 +89,13 @@
 
 @media screen and (min-width: 768.98px) {
   .container .page-header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .mobile-header__logo {
+    display: none;
   }
 }
 
@@ -101,12 +106,13 @@
   height: 24px;
   margin-right: 40px;
 
+
   @media screen and (max-width: 1279.98px) {
-    display: none;
-  }
+
 }
 
 .switch__input {
+  position: absolute;
   height: 0;
   width: 0;
   opacity: 0;
@@ -127,7 +133,6 @@
 .switch__slider::before {
   content: '';
   position: absolute;
-  cursor: pointer;
   top: 2px;
   left: 2px;
   width: 20px;
@@ -144,9 +149,8 @@
 .switch__input:checked+.switch__slider::before {
   top: 2px;
   left: 6px;
+
   transform: translateX(20px);
-  -webkit-transform: translate(20px);
-  -ms-transform: translate(20px);
 }
 
 .list {
@@ -161,5 +165,6 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: #292929;
+
   white-space: nowrap;
 }

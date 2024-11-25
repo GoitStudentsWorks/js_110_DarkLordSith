@@ -1,8 +1,5 @@
 import './js/faq';
 import './js/reviews';
 import './js/myprojects';
-import { initHeaderScroll } from './js/mobile-menu.js';
-import { initMobileMenu } from './js/mobile-menu.js';
+import './js/mobile-menu';
 
-initHeaderScroll();
-initMobileMenu();

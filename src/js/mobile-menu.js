@@ -1,3 +1,4 @@
+
 export const initMobileMenu = () => {
   const refs = {
     openMenuBtn: document.querySelector('.js-open-menu'),
