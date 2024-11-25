@@ -13,8 +13,9 @@
   position: relative;
   cursor: pointer;
   padding-top: 40px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.load-more :hover {
+.load-more:hover {
   color: #00b068;
 }
 .load-more::after {
