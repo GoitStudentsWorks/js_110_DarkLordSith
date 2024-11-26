@@ -81,7 +81,7 @@
 
 @media screen and (min-width: 768px) {
   .about-container {
-    background-image: url(../img/about-me/group-67-tab-2x.png);
+    background-image: url(/img/about-me/group-67-tab-2x.avif);
     background-repeat: no-repeat;
     background-position: left 400px top 844px;
     background-size: 336px 264px;
@@ -164,7 +164,7 @@
 
 @media screen and (min-width: 1280px) {
   .about-container {
-    background-image: url(/img/about-me/group-67-desktop-2x.png);
+    background-image: url(/img/about-me/group-67-desktop-2x.avif);
     background-repeat: no-repeat;
     background-position: right 32px top 692px;
     background-size: 364px 288px;
