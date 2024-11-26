@@ -204,6 +204,7 @@ function createProjectItem(project) {
 
 
   return `
+  <ul>
     <li>
       ${pictureElement}
       <div class="info">
@@ -219,6 +220,7 @@ function createProjectItem(project) {
       </div>
       </div>
     </li>
+    </ul>
   `;
 }
 

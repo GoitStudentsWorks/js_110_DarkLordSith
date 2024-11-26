@@ -8,10 +8,11 @@
   color: #292929;
   border: none;
   background-color: inherit;
-  margin: auto;
+  margin: 0 auto;
   display: block;
   position: relative;
   cursor: pointer;
+  will-change: color, transform;
   padding-top: 40px;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -162,9 +163,7 @@
   .load-more::after {
     width: 119px;
   }
-  /* li {
-    width: 100%;
-  } */
+
   .info {
     gap: 20px;
     margin-top: 16px;
