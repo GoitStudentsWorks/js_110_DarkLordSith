@@ -15,6 +15,7 @@ html {
 .header-logo {
   font-family: 'Impact', sans-serif;
   font-weight: 400;
+  font-size: 24px;
   font-size: 1.5rem;
   line-height: 1;
   letter-spacing: 0.06em;
@@ -140,7 +141,7 @@ html {
   top: 2px;
   left: 2px;
   content: '';
-  background-color: var(--accet-green);
+  background-color: var(--accent-green);
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -163,7 +164,7 @@ input:checked + .move-span {
 }
 
 input:checked + .move-span::before {
-  background-color: var(--accet-green);
+  background-color: var(--accent-green);
   transform: translateX(24px);
 }
 
@@ -199,13 +200,12 @@ input:checked + .move-span::after {
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--black);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-link:hover {
-    color: var(--accet-green);
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #00b068;
   }
 
   .nav-container {

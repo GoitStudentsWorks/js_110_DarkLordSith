@@ -67,14 +67,12 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: all 0.6s ease;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
 .social-media-group a:hover {
   color: #14c57c;
-  border-bottom: 3px solid #14c57c;
-  transition: all 0.6s ease;
 }
 
 .section-hero-title {
