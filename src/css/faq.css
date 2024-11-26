@@ -1,8 +1,7 @@
 .faq-heading {
   box-sizing: border-box;
   min-width: 320px;
-  margin-top: 8px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.03em;
@@ -152,8 +151,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .faq-main {
       background-image: url(/img/faq/decor-bg-4-2x.avif);
     }
