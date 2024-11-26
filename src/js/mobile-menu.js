@@ -1,45 +1,45 @@
-export const initMobileMenu = () => {
+(() => {
   const refs = {
-    openMenuBtn: document.querySelector('.js-open-menu'),
-    closeMenuBtn: document.querySelector('.js-close-menu'),
-    menu: document.querySelector('.js-menu-container'),
-    body: document.querySelector('body'),
-    menuLinks: document.querySelectorAll('.navigation__header-link'),
+    openMenuBtn: document.querySelector('[data-menu-open]'),
+    closeMenuBtn: document.querySelector('[data-menu-close]'),
+    menu: document.querySelector('[data-menu]'),
+    body: document.body,
+    menuLinks: document.querySelectorAll('[data-menu] a[href^="#"]'),
   };
 
   const toggleMenu = () => {
-    refs.menu.classList.toggle('is-open');
-    refs.body.classList.toggle('menu-open');
+    const isMenuOpen = refs.menu.classList.toggle('is-open');
+    refs.openMenuBtn.setAttribute('aria-expanded', isMenuOpen);
+
+    if (isMenuOpen) {
+      refs.body.classList.add('no-scroll');
+    } else {
+      refs.body.classList.remove('no-scroll');
+    }
+  };
+
+  const closeMenuOnLinkClick = event => {
+    const targetId = event.currentTarget.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      toggleMenu();
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  refs.menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
-};
 
-export const initHeaderScroll = () => {
-  let lastScroll = 0;
-  const header = document.querySelector('.header');
-
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-
-    if (currentScroll <= 0) {
-      header.classList.remove('header--hidden');
-      return;
-    }
-
-    if (
-      currentScroll > lastScroll &&
-      !header.classList.contains('header--hidden')
-    ) {
-      header.classList.add('header--hidden');
-    } else if (
-      currentScroll < lastScroll &&
-      header.classList.contains('header--hidden')
-    ) {
-      header.classList.remove('header--hidden');
-    }
-    lastScroll = currentScroll;
+  refs.menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenuOnLinkClick);
   });
-};
+
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (e.matches) {
+      refs.menu.classList.remove('is-open');
+      refs.openMenuBtn.setAttribute('aria-expanded', false);
+      refs.body.classList.remove('no-scroll');
+    }
+  });
+})();

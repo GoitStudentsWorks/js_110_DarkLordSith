@@ -1,31 +1,14 @@
 /*HERO - MOBILE CSS*/
 
-/*body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style-type: none;
-}*/
-
 .section-hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 320px;
   background-image: url(../img/hero/herodotsmob@1x.png);
   background-color: #f0f0f0;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right top;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
@@ -51,13 +34,6 @@ ul {
   }
 }
 
-.hero-dots {
-  width: 346px;
-  height: 704px;
-  object-fit: cover;
-  align-items: center;
-}
-
 .section-container {
   position: relative;
   z-index: 1;
@@ -77,37 +53,37 @@ ul {
 
 .social-media-group {
   display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 20px;
-  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .social-media-group a {
   color: #2a2d32;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
-  transition: all 0.6s ease;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
 .social-media-group a:hover {
   color: #14c57c;
-  border-bottom: 3px solid #14c57c;
-  transition: all 0.6s ease;
 }
 
 .section-hero-title {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 64px;
   line-height: 1.25;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.005em;
   text-transform: uppercase;
   color: #f0f0f0;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -126,7 +102,7 @@ ul {
 .hero-button-link {
   align-items: center;
   display: block;
-  background-color: #14c57c;
+  background-color: #bcdfd1;
   border: none;
   border-radius: 16px;
   font-weight: 500;
@@ -134,48 +110,40 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f0f0f0;
+  color: #292929;
   transition: all 0.6s ease;
   text-align: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   border-radius: 8px;
-  padding: 17px 24px;
-  width: 240px;
-  height: 60px;
   transition: all 0.6s ease;
   position: absolute;
-  left: 25px;
-  top: 70%;
+  left: 15%;
+  top: 90%;
   transform: translateY(-50%);
+  width: 240px;
+  height: 100px;
+  padding: 37px 24px;
 }
 
 .hero-button-link:hover {
-  background-color: #14c57c;
+  background-color: #00b068;
   box-shadow: 0 0 1.6rem #009156;
 }
 
 .hero-img {
-  display: block;
   width: 100%;
   max-width: 100%;
-}
-
-.hero-img img {
-  display: block;
-  width: 100%;
   height: auto;
 }
 
 .description-container {
-  display: block;
-  align-items: center;
+  display: flex;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   background-color: #e4e5e6;
-  width: 110%;
-  height: 204px;
-  padding: 32px 0;
+  width: 100%;
 }
 
 .hero-description {
@@ -187,19 +155,20 @@ ul {
   text-transform: uppercase;
   text-align: center;
   color: #2a2d32;
+  padding: 32px 20px;
+  background-color: #f0f0f0;
 }
 
 /*HERO - TABLET CSS*/
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    margin-bottom: 50px;
-    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-image: url(../img/hero/herodotstabl@1x.png);
+    background-position: top;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -228,45 +197,43 @@ ul {
 
   .social-media-group {
     display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    font-weight: 300;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 500;
     font-size: 30px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    gap: 40px;
+  }
+
+  .social-media-group a {
+    font-size: 16px;
+    letter-spacing: 0.01em;
   }
 
   .section-hero-title {
     font-size: 124px;
     line-height: 1.15;
     letter-spacing: 0.01em;
-
     text-align: left;
-    padding-bottom: 144px;
+    padding-bottom: 50px;
   }
 
   .hero-button-link {
-    align-items: left;
     position: absolute;
-    left: 450px;
-    top: 72%;
     transform: translateY(-50%);
-    padding: 35px 24px;
-    width: 240px;
-    height: 100px;
   }
 
-  .hero-img {
-    display: flex;
-    justify-content: right;
-    width: 336px;
-    height: 508px;
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    padding-left: 250px;
   }
 
   .description-container {
     display: flex;
     justify-content: center;
-    height: 320px;
   }
 
   .hero-description {
@@ -282,9 +249,9 @@ ul {
 
 @media screen and (min-width: 1280px) {
   .section-hero {
-    margin-bottom: 164px;
-    max-width: 1280px;
     background-image: url(../img/hero/herodots@1x.png);
+    background-size: auto;
+    background-position: top right;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -312,25 +279,14 @@ ul {
 
   .section-hero-title {
     font-size: 136px;
-    margin-bottom: 50px;
-  }
-
-  .hero-button-link {
-    left: 150px;
-    top: 61%;
-  }
-
-  .hero-img {
-    display: flex;
-    justify-content: center;
   }
 
   .hero-img img {
     width: 488px;
-    height: auto;
+    height: 788px;
+    padding-left: 0;
   }
-
-  .description-container {
-    padding: 90px;
+  .hero-description {
+    padding: 120px 136px;
   }
 }
