@@ -121,10 +121,22 @@
   .faq-main {
     display: flex;
     justify-content: space-between;
-    background-image: url(/img/faq/decor-bg-4.png);
+    background-image: url(/img/faq/decor-bg-4.avif);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 526px 408px;
+  }
+
+  @supports not (background-image: url(/img/faq/decor-bg-4.avif)) {
+    .faq-main {
+      background-image: url(/img/faq/decor-bg-4.webp);
+    }
+  }
+
+  @supports not (background-image: url(/img/faq/decor-bg-4.webp)) {
+    .faq-main {
+      background-image: url(/img/faq/decor-bg-4.png);
+    }
   }
 
   .faq-heading {
@@ -140,10 +152,22 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .faq-main {
-      background-image: url(/img/faq/decor-bg-4-2x.png);
+      background-image: url(/img/faq/decor-bg-4-2x.avif);
+    }
+
+    @supports not (background-image: url(/img/faq/decor-bg-4-2x.avif)) {
+      .faq-main {
+        background-image: url(/img/faq/decor-bg-4-2x.webp);
+      }
+    }
+
+    @supports not (background-image: url(/img/faq/decor-bg-4-2x.webp)) {
+      .faq-main {
+        background-image: url(/img/faq/decor-bg-4-2x.png);
+      }
     }
   }
 }
