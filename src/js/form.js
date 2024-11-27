@@ -19,19 +19,19 @@ const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 formInput.addEventListener('change', event =>
   onChangeInput(event, invalidEmail, successEmail)
 );
-formMessage.addEventListener('change', event =>
+formMessage.addEventListener('input', event =>
   onChangeInput(event, invalidMessage, successMessage)
 );
 form.addEventListener('submit', onBtnSubmit);
 
 // listener for close modal window
 closeModalBtn.addEventListener('click', onBtnClose);
-window.addEventListener('keydown', (event) => {
+window.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     onBtnClose();
   }
 });
-window.addEventListener('click', (event) => {
+window.addEventListener('click', event => {
   if (event.target === modal) {
     onBtnClose();
   }
@@ -60,7 +60,7 @@ function onBtnSubmit(event) {
         message: `${error.message}`,
       });
     })
-    .finally(() => formBtn.disabled = false);
+    .finally(() => (formBtn.disabled = false));
 }
 
 async function postData(email, message) {
@@ -77,11 +77,16 @@ function onChangeInput(event, inValidField, successField) {
   const isValid = event.target.validity.valid;
 
   if (value && isValid) {
+    event.target.style.color = '#292929';
     inValidField.classList.add('visually-hidden');
     successField.classList.remove('visually-hidden');
   } else {
+    event.target.style.color = '#E74A3B';
     successField.classList.add('visually-hidden');
     inValidField.classList.remove('visually-hidden');
+    if (value === '') {
+      event.target.style.color = '#292929';
+    }
   }
 }
 
