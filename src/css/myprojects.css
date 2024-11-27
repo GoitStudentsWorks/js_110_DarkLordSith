@@ -31,6 +31,9 @@
   border-radius: 5px;
 }
 
+body.dark-mode .load-more {
+  color: #f0f0f0;
+}
 .hidden {
   display: none;
 }
@@ -49,7 +52,9 @@
 .project-title span {
   color: #00b068;
 }
-
+body.dark-mode .project-title {
+  color: #f0f0f0;
+}
 .my-project-list {
   display: flex;
   flex-direction: column;
@@ -104,6 +109,9 @@
 .link-visit:hover {
   background-color: #bbb;
 }
+body.dark-mode .link-visit {
+  background: #2a2d32;
+}
 .text-visit {
   font-weight: 500;
   text-align: center;
@@ -113,6 +121,9 @@
   color: #292929;
   margin-right: 12px;
   font-family: 'Poppins', sans-serif;
+}
+body.dark-mode .text-visit {
+  color: #f0f0f0;
 }
 .link-btn {
   border-radius: 8px;
