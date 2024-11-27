@@ -34,6 +34,21 @@
   }
 }
 
+@supports (
+  background-image:
+    image-set(
+      url(../img/hero/herodotsmob@1x.png) 1x,
+      url(../img/hero/herodotsmob@2x.png) 2x
+    )
+) {
+  .section-main {
+    background-image: image-set(
+      url(../img/hero/herodotsmob@1x.webp) 1x,
+      url(../img/hero/herodotsmob@2x.webp) 2x
+    );
+  }
+}
+
 .section-container {
   position: relative;
   z-index: 1;
@@ -180,6 +195,21 @@
     }
   }
 
+  @supports (
+    background-image:
+      image-set(
+        url(../img/hero/herodotstabl@1x.png) 1x,
+        url(../img/hero/herodotstabl@2x.png) 2x
+      )
+  ) {
+    .section-main {
+      background-image: image-set(
+        url(../img/hero/herodotstabl@1x.webp) 1x,
+        url(../img/hero/herodotstabl@2x.webp) 2x
+      );
+    }
+  }
+
   .hero-dots {
     width: 704px;
     height: 896px;
@@ -260,6 +290,21 @@
     (min-resolution: 2dppx) {
     .section-main {
       background-image: url(../img/hero/herodots@2x.png);
+    }
+  }
+
+  @supports (
+    background-image:
+      image-set(
+        url(../img/hero/herodots@1x.png) 1x,
+        url(../img/hero/herodots@2x.png) 2x
+      )
+  ) {
+    .section-main {
+      background-image: image-set(
+        url(../img/hero/herodots@1x.webp) 1x,
+        url(../img/hero/herodots@2x.webp) 2x
+      );
     }
   }
 

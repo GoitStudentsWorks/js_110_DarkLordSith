@@ -159,7 +159,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(46, 47, 66, 0.40);
+    background-color: rgba(41, 41, 41, 0.8);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -173,16 +173,16 @@
 }
 
 .modal {
-    width: 492px;
-    min-height: 280px;
+    width: 320px;
+    min-height: 328px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    border-radius: 4px;
-    background: #FCFCFC;
+    border-radius: 16px;
+    background: #F0F0F0;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    padding: 64px;
+    padding: 48px 32px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -191,12 +191,11 @@
     height: 24px;
     padding: 0;
     position: absolute;
-    top: 24px;
-    right: 24px;
-    margin-bottom: 24px;
+    top: 16px;
+    right: 16px;
+    margin-bottom: 8px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background-color: #E7E9FC;
+    background-color: transparent;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -209,7 +208,7 @@
 .modal_close-btn:focus,
 .modal_close-btn:active {
     border: none;
-    background-color: #404BBF;
+    background-color: #00B068;
 }
 
 .modal_close-icons {
@@ -282,6 +281,18 @@
 
     .form-btn {
         max-width: 173px;
+    }
+
+    .modal {
+        width: 492px;
+        min-height: 280px;
+        padding: 64px;
+    }
+
+    .modal_close-btn {
+        top: 20px;
+        right: 20px;
+        margin-bottom: 20px;
     }
 }
 
