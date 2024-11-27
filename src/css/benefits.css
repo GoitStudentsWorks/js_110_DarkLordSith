@@ -151,7 +151,7 @@
     width: 526px;
     height: 408px;
     display: block;
-    background-image: url(/img/benefits/decor-benefits-1x.png);
+    background-image: url(/img/benefits/decor-benefits-1x.webp);
     background-size: cover;
     position: absolute;
     right: 0;
@@ -159,7 +159,7 @@
   }
   @media (min-resolution: 192dpi) {
     .background-image {
-      background-image: url(/img/benefits/decor-benefits-2x.png);
+      background-image: url(/img/benefits/decor-benefits-2x.webp);
     }
   }
 }
