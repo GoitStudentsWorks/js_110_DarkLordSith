@@ -76,9 +76,9 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-bg-light);
   scrollbar-width: thin;
-  scrollbar-color: var(--color-bg-light);
+  scrollbar-color: var(--color-light-grey);
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -87,13 +87,13 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-light-grey);
-  border-radius: 45px;
-  border: 3px solid var(--color-bg-light);
+  border-radius: 12px;
+  border: 3px solid var(--color-light-grey);
 }
 
 body::-webkit-scrollbar-track {
   background-color: var(--color-bg-light);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
