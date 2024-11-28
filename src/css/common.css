@@ -196,6 +196,7 @@ img {
   --color-bg-dark: #1e2023; /* Тёмный фон */
   --color-text-dark: #f0f0f0; /* Тёмный текст */
   --color-accent-dark: #14c57c; /* Акцентный цвет для тёмной темы */
+  --color-button-dark: #009156;
   --color-bg-accent-dark: #204136; /* Акцентный фон для тёмной темы */
   --color-charcoal-dark: #2a2d32;
   --color-icon-dark: #f0f0f0; /* Цвет иконок для тёмной темы */

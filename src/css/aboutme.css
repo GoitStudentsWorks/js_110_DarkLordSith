@@ -16,6 +16,7 @@
   width: 320px;
   height: 374px;
   box-shadow: var(--box-shadow);
+  aspect-ratio: 16 / 9;
   margin-bottom: 40px;
 }
 
