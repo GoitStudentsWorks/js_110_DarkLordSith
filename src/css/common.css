@@ -18,12 +18,17 @@
   --color-accent: #00b068; /* Акцентный цвет */
   --color-bg-light: #f0f0f0; /* Светлый фон */
   --color-bg-accent: #bcdfd1; /* Акцентный фон */
+  --color-light-grey: #e4e5e6;
   --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Стандартная тень */
   --border-radius: 16px; /* Радиус скругления */
   --font-main: 'Poppins', sans-serif;
   --font-heading: 'Impact', sans-serif;
 }
 
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 /* Общие стили для body и элементов */
 body,
 h1,
@@ -43,9 +48,11 @@ li {
 
 body {
   font-family: var(--font-main);
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.03em;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -64,13 +71,13 @@ h2 {
 h1 {
   font-size: 64px;
   line-height: 1.25;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 }
 
 h2 {
   font-size: 52px;
   line-height: 1.23;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.03em;
 }
 
 /* Стили для текстов */
@@ -155,7 +162,7 @@ img {
   h1 {
     font-size: 136px;
     line-height: 1.147;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
   }
 
   h2 {
@@ -189,7 +196,9 @@ img {
   --color-bg-dark: #1e2023; /* Тёмный фон */
   --color-text-dark: #f0f0f0; /* Тёмный текст */
   --color-accent-dark: #14c57c; /* Акцентный цвет для тёмной темы */
+  --color-button-dark: #009156;
   --color-bg-accent-dark: #204136; /* Акцентный фон для тёмной темы */
+  --color-charcoal-dark: #2a2d32;
   --color-icon-dark: #f0f0f0; /* Цвет иконок для тёмной темы */
 }
 
@@ -204,7 +213,7 @@ body.dark-mode .nav-link {
 }
 
 body.dark-mode .switch__slider {
-  background-color: var(--color-bg-accent-dark);
+  background-color: var(--color-bg-dark);
 }
 
 body.dark-mode .modal-btn svg {
@@ -213,6 +222,12 @@ body.dark-mode .modal-btn svg {
 
 /* Стили для тёмной темы при переключении */
 body.dark-mode h1,
-body.dark-mode h2 {
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode li {
+  color: var(--color-text-dark);
+}
+
+li::marker {
   color: var(--color-accent-dark);
 }
