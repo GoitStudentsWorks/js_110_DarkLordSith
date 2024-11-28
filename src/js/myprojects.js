@@ -86,7 +86,7 @@ const projects = [
         },
         stack: "React, JavaScript, Node JS, Git",
         title: "WALLET WEBSERVICE",
-        link: "#"
+        link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
         images: {
@@ -96,7 +96,7 @@ const projects = [
         },
         stack: "React, JavaScript, Node JS, Git",
         title: "GREEN HARVEST WEBSERVICE",
-        link: "#"
+        link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
                  images: {
@@ -106,7 +106,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "ENGLISH EXCELLENCE WEBSERVICE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
                 images: {
@@ -116,7 +116,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "CHEGO JEWELRY WEBSITE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
                images: {
@@ -126,7 +126,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "MIMINO WEBSITE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
         images: {
@@ -136,7 +136,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "VYSHYVANKA VIBES LANDING PAGE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
         images: {
@@ -146,7 +146,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "ENERGY FLOW WEBSERVICE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
        images: {
@@ -156,7 +156,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "POWER PULSE WEBSERVICE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
         images: {
@@ -166,7 +166,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "Fruitbox online store",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     },
     {
                 images: {
@@ -176,7 +176,7 @@ const projects = [
         },
                 stack: "React, JavaScript, Node JS, Git",
                 title: "STARLIGHT STUDIO LANDING PAGE",
-                link: "#"
+                link: "https://darklordsith.github.io/Project_JS_G03/"
     }
 ];
 
