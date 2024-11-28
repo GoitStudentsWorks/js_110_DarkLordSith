@@ -1,5 +1,3 @@
-/* ______________NEW-COMMON______________ */
-
 *,
 *::before,
 *::after {
@@ -12,15 +10,37 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Poppins-Regular.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/Poppins-Light.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Poppins-Medium.ttf') format('woff2');
+}
 
 :root {
-  --color-primary: #292929; /* Основной цвет текста */
-  --color-accent: #00b068; /* Акцентный цвет */
-  --color-bg-light: #f0f0f0; /* Светлый фон */
-  --color-bg-accent: #bcdfd1; /* Акцентный фон */
+  --color-primary: #292929;
+  --color-accent: #00b068;
+  --color-bg-light: #f0f0f0;
+  --color-bg-accent: #bcdfd1;
   --color-light-grey: #e4e5e6;
-  --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Стандартная тень */
-  --border-radius: 16px; /* Радиус скругления */
+  --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --border-radius: 16px;
+
   --font-main: 'Poppins', sans-serif;
   --font-heading: 'Impact', sans-serif;
 }
@@ -29,7 +49,7 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* Общие стили для body и элементов */
+
 body,
 h1,
 h2,
@@ -59,7 +79,6 @@ body {
   background-color: var(--color-bg-light);
 }
 
-/* Заголовки */
 h1,
 h2 {
   font-family: var(--font-heading);
@@ -80,7 +99,6 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-/* Стили для текстов */
 p,
 ul,
 ol,
@@ -102,7 +120,6 @@ p:last-child {
   text-transform: uppercase;
 }
 
-/* Скрытые элементы */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -116,7 +133,6 @@ p:last-child {
   overflow: hidden;
 }
 
-/* Стили для ссылок */
 a {
   color: inherit;
   text-decoration: none;
@@ -126,34 +142,29 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Кнопки */
 button {
   border: none;
   cursor: pointer;
   font: inherit;
 }
 
-/* Изображения */
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
-/* Контейнер */
 .container {
   min-width: 320px;
   max-width: 360px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-/* Фавиконки */
 .favicon {
   width: 52px;
 }
 
-/* Медиазапросы для адаптивности */
 @media screen and (min-width: 768px) {
   section {
     padding: 62px 0;
@@ -173,7 +184,8 @@ img {
 
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .favicon {
@@ -193,16 +205,15 @@ img {
 
 /* _____________DARK-THEM_____________ */
 :root {
-  --color-bg-dark: #1e2023; /* Тёмный фон */
-  --color-text-dark: #f0f0f0; /* Тёмный текст */
-  --color-accent-dark: #14c57c; /* Акцентный цвет для тёмной темы */
+  --color-bg-dark: #1e2023;
+  --color-text-dark: #f0f0f0;
+  --color-accent-dark: #14c57c;
   --color-button-dark: #009156;
-  --color-bg-accent-dark: #204136; /* Акцентный фон для тёмной темы */
+  --color-bg-accent-dark: #204136;
   --color-charcoal-dark: #2a2d32;
-  --color-icon-dark: #f0f0f0; /* Цвет иконок для тёмной темы */
+  --color-icon-dark: #f0f0f0;
 }
 
-/* Тёмная тема */
 body.dark-mode {
   background-color: var(--color-bg-dark);
   color: var(--color-text-dark);
@@ -217,17 +228,12 @@ body.dark-mode .switch__slider {
 }
 
 body.dark-mode .modal-btn svg {
-  fill: var(--color-icon-dark);
+  stroke: var(--color-icon-dark);
 }
 
-/* Стили для тёмной темы при переключении */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode li {
   color: var(--color-text-dark);
-}
-
-li::marker {
-  color: var(--color-accent-dark);
 }
