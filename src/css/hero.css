@@ -142,6 +142,9 @@
   max-width: 100%;
   height: auto;
 }
+.hero-dev-img {
+  max-width: 100%;
+}
 
 .description-container {
   display: flex;
