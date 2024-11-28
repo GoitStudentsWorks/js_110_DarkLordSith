@@ -1,4 +1,6 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const form = document.querySelector('.form');
 const formInput = document.querySelector('.form_input');
@@ -12,6 +14,7 @@ const modal = document.getElementById('myModal');
 const closeModalBtn = document.querySelector('.modal_close-icons');
 const modalTitle = document.querySelector('.modal_title');
 const modalText = document.querySelector('.modal_text');
+const body = document.querySelector('body');
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
 
@@ -51,6 +54,7 @@ function onBtnSubmit(event) {
 
       modal.classList.add('is-open');
       form.reset();
+      body.style.overflow = 'hidden';
       successEmail.classList.add('visually-hidden');
       successMessage.classList.add('visually-hidden');
     })
@@ -92,4 +96,5 @@ function onChangeInput(event, inValidField, successField) {
 
 function onBtnClose() {
   modal.classList.remove('is-open');
+  body.style.overflow = 'visible';
 }
