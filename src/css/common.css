@@ -83,16 +83,17 @@ body {
 body::-webkit-scrollbar {
   width: 12px;
   height: 12px;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-light-grey);
   border-radius: 12px;
-  border: 3px solid var(--color-light-grey);
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--color-bg-light);
+  background-color: transparent;
   border-radius: 12px;
 }
 
@@ -257,4 +258,18 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode li {
   color: var(--color-text-dark);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background-color: var(--color-charcoal-dark);
+  border-radius: 12px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent-dark);
 }
