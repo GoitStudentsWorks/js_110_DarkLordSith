@@ -58,6 +58,8 @@ body.dark-mode .project-title {
 .my-project-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+    align-items: center;
   gap: 40px;
   list-style: none;
   padding: 0;
@@ -156,6 +158,9 @@ body.dark-mode .text-visit {
 }
 .picture img {
   border-radius: 24px;
+}
+.img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
