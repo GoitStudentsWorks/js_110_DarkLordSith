@@ -58,6 +58,7 @@
 
 .section-hero-content {
   display: block;
+  justify-items: center;
   align-items: center;
 }
 
@@ -143,7 +144,7 @@
   height: auto;
 }
 
-.description-container {
+.social-media-group {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -151,7 +152,7 @@
   background-color: var(--color-light-grey);
   width: 100%;
 }
-.dark-mode .description-container {
+.dark-mode .social-media-group {
   background-color: var(--color-charcoal-dark);
 }
 
@@ -287,10 +288,10 @@
     padding-left: 250px;
   }
 
-  .description-container {
+  /* .description-container {
     display: flex;
     justify-content: center;
-  }
+  } */
 
   .hero-description {
     font-weight: 500;
